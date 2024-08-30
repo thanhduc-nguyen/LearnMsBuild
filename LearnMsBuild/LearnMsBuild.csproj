@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Target Name="HelloWorld">
+		<Message Importance="high" Text="Configuration is %22$(Configuration)%22" />
+		<Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+		<Message Text="Compile item type contains @(Compile, '%0A')" />
+		<Message Text="Photo item type contains @(Photos, '%0A')" />
+	</Target>
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Photos Include="images\**\*.jpeg" />
+	</ItemGroup>
+
+</Project>
