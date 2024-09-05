@@ -34,7 +34,7 @@
     </Target>
 
     <Target Name="ListPics">
-     <Message Text="@(Pics->'%(ModifiedTime)')"></Message>
+        <Message Text="@(Pics->'%(ModifiedTime)')"></Message>
         <Message Text="@(Pics->'%(ModifiedTime)')"></Message>
     </Target>
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="TargetA;TargetB" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="Common.props" />
+    <Import Project="Common.targets" />
+
+    <PropertyGroup>
+        <DoIt>Learn</DoIt>
+    </PropertyGroup>
+
+    <Target Name="TargetA">
+        <Message Text="This is target A, then call target C" />
+        <CallTarget Targets="TargetC" />
+    </Target>
+
+    <Target Name="TargetB">
+        <Message Text="This is target B, then call target C" />
+        <CallTarget Targets="TargetC" />
+    </Target>
+
+    <Target Name="TargetC" DependsOnTargets="TargetD">
+        <Message Text="This is target C, it depends on target D" />
+    </Target>
+
+    <Target Name="TargetD">
+        <Message Text="This is target D" />
+    </Target>
+    
+    <Target Name="TargetE" AfterTargets="TargetA">
+        <Message Text="This is target E which runs after target A" />
+    </Target>
+
+    <Target Name="TargetF" BeforeTargets="TargetA" Condition="$(DoIt) == 'Learn'">
+        <Message Text="This is target F which runs before target A" />
+    </Target>
+</Project>

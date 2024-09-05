@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Target Name="Math" DependsOnTargets="Build">
+		<Add2Numbers Number1="2" Number2="8">
+			<Output TaskParameter="Result" PropertyName="Sum" />
+		</Add2Numbers>
+		<Message Text="The sum is $(Sum)" />
+
+		<Multiply2Numbers Number1="20" Number2="5">
+			<Output TaskParameter="Result" PropertyName="Product" />
+		</Multiply2Numbers>
+		<Message Text="The product is $(Product)" />
+	</Target>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Pluralsight3.CustomTasks</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Number1>20</Number1>
+		<Number2>5</Number2>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.11.4" />
+	</ItemGroup>
+
+	<Import Project="PluralsightTasks.tasks"/>
+</Project>

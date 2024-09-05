@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask AssemblyFile="bin\Debug\net8.0\Pluralsight3.CustomTasks.dll" TaskName="Add2Numbers" />
+	<UsingTask AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll"
+			   TaskName="Multiply2Numbers" 
+			   TaskFactory="CodeTaskFactory">
+		<ParameterGroup>
+			<Number1 ParameterType="System.Double" Required="true" />
+			<Number2 ParameterType="System.Double" Required="true" />
+			<Result ParameterType="System.Double" Output="true" />
+		</ParameterGroup>
+		<Task>
+			<Code Type="Fragment" Language="cs">
+				Result = Number1 * Number2;
+			</Code>
+		</Task>
+	</UsingTask>
+</Project>

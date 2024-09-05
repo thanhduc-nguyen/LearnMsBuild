@@ -13,4 +13,8 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<Target Name="Goodbye" AfterTargets="HelloWorld">
+		<Message Text="Run after target HelloWorld" />
+	</Target>
+
 </Project>

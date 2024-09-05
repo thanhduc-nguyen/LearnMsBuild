@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnMsBuild", "LearnMsBuild\LearnMsBuild.csproj", "{0444ED05-49A2-4D6D-A43D-3F3C238C598F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnMsBuild", "LearnMsBuild\LearnMsBuild.csproj", "{0444ED05-49A2-4D6D-A43D-3F3C238C598F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pluralsight3.CustomTasks", "Pluralsight3.CustomTasks\Pluralsight3.CustomTasks.csproj", "{6C0549A1-D303-4A90-94F2-4D0B0607D7D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0444ED05-49A2-4D6D-A43D-3F3C238C598F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0444ED05-49A2-4D6D-A43D-3F3C238C598F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0444ED05-49A2-4D6D-A43D-3F3C238C598F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0549A1-D303-4A90-94F2-4D0B0607D7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0549A1-D303-4A90-94F2-4D0B0607D7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0549A1-D303-4A90-94F2-4D0B0607D7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0549A1-D303-4A90-94F2-4D0B0607D7D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
