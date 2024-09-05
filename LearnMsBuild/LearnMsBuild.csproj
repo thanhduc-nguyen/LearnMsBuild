@@ -13,8 +13,4 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<Photos Include="images\**\*.jpeg" />
-	</ItemGroup>
-
 </Project>
