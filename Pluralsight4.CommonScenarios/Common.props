@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<MSBuildExtensionsPath>$(MSBuildExtensionsPath64)</MSBuildExtensionsPath>
+		<ProjectDir>.\</ProjectDir>
+		<SolutionFileName>$(ProjectDir)/../CommonScenarios.sln</SolutionFileName>
+		<OutputPath>Output</OutputPath>
+		<Version>1.5.2</Version>
+		<FileVersion>2.0.0</FileVersion>
+	</PropertyGroup>
+
+
+</Project>

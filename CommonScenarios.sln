@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automobiles", "Pluralsight4.CommonScenarios\Automobiles\Automobiles.csproj", "{9066884A-C3E2-4884-A3CF-FFA7906CE72E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Automobiles.Test", "Pluralsight4.CommonScenarios\Automobiles.Test\Automobiles.Test.csproj", "{B380EE1E-34D5-4424-B50F-1FD564323E3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{DF6F9A1E-7F74-4F99-8DA1-E8A1DE34291C}"
+	ProjectSection(SolutionItems) = preProject
+		Pluralsight4.CommonScenarios\args.rsp = Pluralsight4.CommonScenarios\args.rsp
+		Pluralsight4.CommonScenarios\Common.props = Pluralsight4.CommonScenarios\Common.props
+		Pluralsight4.CommonScenarios\Common.targets = Pluralsight4.CommonScenarios\Common.targets
+		Pluralsight4.CommonScenarios\DoSomething.proj = Pluralsight4.CommonScenarios\DoSomething.proj
+		Pluralsight4.CommonScenarios\PsBuildTasks.tasks = Pluralsight4.CommonScenarios\PsBuildTasks.tasks
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automobiles2.Test", "Pluralsight4.CommonScenarios\Automobiles2.Test\Automobiles2.Test.csproj", "{534AF879-ACFF-4D4F-8543-B9A1BDB78319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9066884A-C3E2-4884-A3CF-FFA7906CE72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9066884A-C3E2-4884-A3CF-FFA7906CE72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9066884A-C3E2-4884-A3CF-FFA7906CE72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9066884A-C3E2-4884-A3CF-FFA7906CE72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B380EE1E-34D5-4424-B50F-1FD564323E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B380EE1E-34D5-4424-B50F-1FD564323E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B380EE1E-34D5-4424-B50F-1FD564323E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B380EE1E-34D5-4424-B50F-1FD564323E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534AF879-ACFF-4D4F-8543-B9A1BDB78319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534AF879-ACFF-4D4F-8543-B9A1BDB78319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534AF879-ACFF-4D4F-8543-B9A1BDB78319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534AF879-ACFF-4D4F-8543-B9A1BDB78319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C3DA50A-9EA5-4482-A5AF-F8C5ADB46459}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+	<Target Name="CleanDir">
+		<RemoveDir Directories="$(OutputPath)\**" Condition="Exists($(OutputPath))" />
+	</Target>
+
+	<Target Name="BuildSolution" DependsOnTargets="CleanDir">
+		<MSBuild Projects="$(SolutionFileName)"
+				 Properties="Configuration=Release;OutputPath=..\$(OutputPath);Version=$(Version);FileVersion=$(FileVersion)" />
+	</Target>
+
+	<Target Name="RunTests" DependsOnTargets="BuildSolution">
+		<Exec Command="dotnet test *.Test.dll" WorkingDirectory="$(OutputPath)" />
+	</Target>
+
+	<Import Project="Common.targets"/>
+	<Import Project="PsBuildTasks.tasks"/>
+
+</Project>
